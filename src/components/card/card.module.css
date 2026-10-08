@@ -1,7 +1,10 @@
 .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
     background-color: #f8fafc;
     border-radius: 0.65rem;
-    border: 1px solid #f1f5f9;
+    border: 1px solid #e2e8f0;
     padding: 0.6rem;
 }
 
@@ -10,9 +13,11 @@
     padding: 0;
 }
 
-.card p {
+.card p,
+.card pre {
     margin: 0;
     padding: 0;
+    line-height: 1.2;
 }
 
 .card-header {
@@ -23,4 +28,42 @@
 
 .card-title {
     font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.card-category {
+    padding: 0.1rem 0.4rem;
+    font-size: 0.8rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.2rem;
+}
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    font-size: 0.9rem;
+}
+
+.card-code {
+    margin: 0;
+    padding: 0.5rem ;
+    background-color: #e2e8f0;
+    border-radius: 0.2rem;
+}
+
+.card-footer {
+    padding: 0.5rem 0;
+    border-top: 1px solid #e2e8f0;    
+}
+
+.card-footer span {
+    color: #64748b;
 }
